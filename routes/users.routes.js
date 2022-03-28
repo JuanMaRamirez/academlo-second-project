@@ -1,14 +1,16 @@
 const express = require('express');
 
-//Controllers
+// Controllers
 const {
-  createUser,
   getAllUsers,
   getUserById,
+  createUser,
   updateUser,
-  deleteUser
-} = require('../controllers/user.controller');
+  deleteUser,
+  loginUser
+} = require('../controllers/users.controller');
 
+// Middlewares
 const {
   validateSession,
   protectAdmin

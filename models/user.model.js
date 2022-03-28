@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize');
-const { sequelize } = require('../util/');
+const { sequelize } = require('../util/database');
 
 const User = sequelize.define('user', {
   id: {
@@ -29,7 +29,7 @@ const User = sequelize.define('user', {
   role: {
     tyé: DataTypes.STRING(10),
     allowNull: false,
-    defaultValue: 'gest' | admin
+    defaultValue: 'guest'
   }
 });
 
